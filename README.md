@@ -1,7 +1,7 @@
 # qwen_image_play 
 Create still images using Huggingface diffusers library and latest Qwen Image model
 
-## Hardware Configuration 
+## Hardware Configuration tested 
 * Intel/AMD system with at least 24 cores
 * 256 GB DDR5
 * NVIDIA 5090 w/ 32GB VRAM
@@ -25,9 +25,10 @@ $ make image
 ```bash
 $ make run
 ```
-On NVIDIA 5090 card, it takes about 1 minute to generate each image.  They will be located as 0.png, 1.png, and 2.png in the root folder
+On NVIDIA 5090 card, it takes about 1 minute to generate each image.  They will be located as 0.png, 1.png, and 2.png in the 'output_folder' folder
 
 # References
 * https://prompthero.com
+* https://arxiv.org/abs/2508.02324
 * https://huggingface.co/Qwen/Qwen-Image
 * https://huggingface.co/DFloat11/Qwen-Image-DF11

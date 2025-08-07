@@ -28,7 +28,7 @@ def parse_args():
 
 args = parse_args()
 
-model_name = "Qwen/Qwen-Image"
+model_name = "models/Qwen/Qwen-Image"
 
 with no_init_weights():
     transformer = QwenImageTransformer2DModel.from_config(
@@ -38,7 +38,7 @@ with no_init_weights():
     ).to(torch.bfloat16)
 
 DFloat11Model.from_pretrained(
-    "DFloat11/Qwen-Image-DF11",
+    "models/DFloat11/Qwen-Image-DF11",
     device="cpu",
     cpu_offload=args.cpu_offload,
     pin_memory=not args.no_pin_memory,
