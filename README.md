@@ -5,7 +5,7 @@ Create still images using Huggingface diffusers library and latest Qwen Image mo
 * Intel/AMD system with at least 24 cores
 * 256 GB DDR5
 * NVIDIA 5090 w/ 32GB VRAM
-* 150GB free storage space for models
+* 80GB free storage space for models
 
 ## Prerequisites 
 
@@ -25,7 +25,7 @@ $ make image
 ```bash
 $ make run
 ```
-On NVIDIA 5090 card, it takes about 1 minute to generate each image 
+On NVIDIA 5090 card, it takes about 1 minute to generate each image.  They will be located as 0.png, 1.png, and 2.png in the root folder
 
 # References
 * https://prompthero.com
