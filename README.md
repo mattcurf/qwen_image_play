@@ -1,6 +1,10 @@
 # qwen_image_play 
 Create still images using Huggingface diffusers library and latest Qwen Image model
 
+![sample image](doc/sample.png)
+
+"A couple strolling in a dimly lit dark night, digital painting, artstation, concept art, Sergey Kolesov , Breathtaking, 8k resolution, extremely detailed, beautiful, establishing shot, artistic, hyperrealistic, octane render, cinematic lighting, dramatic lighting, masterpiece, light brazen, extremely detailed and beautiful face"
+
 ## Hardware Configuration 
 * Intel/AMD system with at least 24 cores
 * 256 GB DDR5
