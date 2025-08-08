@@ -4,5 +4,5 @@ transformers
 huggingface_hub
 hf_transfer
 dfloat11[cuda12]
-git+https://github.com/huggingface/diffusers
+git+https://github.com/huggingface/diffusers@50e18ee6982f8006e7247c756c573b8204fe354b
 

@@ -6,7 +6,7 @@ ifeq ($(ARCH),arm64)
 endif
 
 DOCKER_IMAGE_NAME = $(shell basename `pwd`)
-DOCKER_ARGS = -it --rm --security-opt seccomp=unconfined -v `pwd`:/project -w /project  -e HF_TOKEN=$(HF_TOKEN)
+DOCKER_ARGS = -it --rm -v `pwd`:/project -w /project  -e HF_TOKEN=$(HF_TOKEN)
 
 ifeq ($(shell [ -f "/proc/driver/nvidia/version" ] && echo yes),yes)
   DOCKER_ARGS += --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -e HAS_GPU=1
@@ -17,7 +17,7 @@ endif
 
 DOCKER_ARGS += $(DOCKER_IMAGE_NAME)
 
-default: run_benchmark
+default: run
 
 models output_folder:
 	mkdir $@
